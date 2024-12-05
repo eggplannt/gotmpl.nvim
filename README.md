@@ -1,3 +1,6 @@
+>[!NOTE]
+> This is intended to be kept as a proof of concept, please adapt the example to your specific situation 
+
 # gotmpl.nvim
 
 Editing Go template files (.tmpl) in Neovim lacks accurate syntax highlighting, making the code
