@@ -3,9 +3,8 @@ local M = {}
 M.setup = function()
 	vim.treesitter.query.add_directive("inject-go-tmpl!", function(_, _, bufnr, _, metadata)
 		local fname = vim.api.nvim_buf_get_name(bufnr)
-		local ft = vim.filetype.match({ filename = fname})
+		local ft = vim.filetype.match({ filename = fname })
 		if not ft then
-			metadata["injection.language"] = "gotmpl"
 			return
 		end
 		metadata["injection.language"] = ft
